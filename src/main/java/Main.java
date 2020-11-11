@@ -72,7 +72,19 @@ public class Main {
                 System.err.println("有効な点数を入力してください。");
             }
 
-        } else {
+        } else if ((args[0].equals("3-8"))) {
+
+            try {
+                IntPair intPair = Scanner.scanScorePair();
+                String s = ScoreTable.groupScoreFrom2test(intPair);
+                StringPrinter.printString(s);
+            } catch (NumberFormatException e) {
+                System.err.println("\"int型\"x を入力してください。");
+            } catch (IllegalArgumentException e) {
+                System.err.println("有効な点数を入力してください。");
+            }
+
+        } else{
             System.err.println("問題番号を指定してください。");
         }
     }

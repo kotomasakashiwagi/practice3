@@ -28,4 +28,16 @@ public class ScoreTable {
             return "\"不可\"";
         }
     }
+
+    public static String groupScoreFrom2test(IntPair intPair) {
+        if (intPair.getY() >= 60 && intPair.getX() >= 60) {
+            return groupScore1(100);
+        } else if (intPair.getY() + intPair.getX() >= 130) {
+            return groupScore1(100);
+        } else if (intPair.getY() >= 90 || intPair.getX() > 90) {
+            return groupScore1(100);
+        } else {
+            return groupScore1(59);
+        }
+    }
 }

@@ -57,4 +57,20 @@ public class Scanner {
         }
 
     }
+
+    public static IntPair scanScorePair() {
+        System.out.println("int型　点数xとyを入力してください。");
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        try {
+            int x = Integer.parseInt(scan.next());
+            int y = Integer.parseInt(scan.next());
+            if (x >= 0 && x <= 100 && y >= 0 && y <= 100) {
+                return new IntPair(x, y);
+            } else {
+                throw new IllegalArgumentException();
+            }
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException();
+        }
+    }
 }
