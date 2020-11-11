@@ -9,9 +9,20 @@ public class StringPrinter {
         }
     }
 
-    public static void printString(String s) {
+    public static void printIsXBiggerY(String s) {
         if (s.equals("true")) {
             System.out.println("xはyより大きい");
+        }
+    }
+    public static void printIsXBiggerYOrNot(String s) {
+        if (s.equals("true")) {
+            System.out.println("xはyより大きい");
+        }
+        if (s.equals("false")) {
+            System.out.println("xはyより小さい");
+        }
+        if (s.equals("equal")) {
+            System.out.println("xとyは同じです。");
         }
     }
 }

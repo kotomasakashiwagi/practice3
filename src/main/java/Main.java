@@ -7,12 +7,32 @@ public class Main {
         } else if (args[0].equals("3-1")) {
             IntPair intPair = Scanner.scanXY();
             String s = UtilityOfIntPair.isXBiggerThanY(intPair);
-            StringPrinter.printString(s);
+            StringPrinter.printIsXBiggerY(s);
         } else if ((args[0].equals("3-2"))) {
             IntPair intPair = Scanner.scanXY();
             String s = UtilityOfIntPair.isXBiggerThanY(intPair);
             StringPrinter.printBiggerInt(s, intPair);
-        } else {
+        } else if ((args[0].equals("3-3"))) {
+
+            try {
+                IntPair intPair = Scanner.scanXY();
+                String s = UtilityOfIntPair.isXBiggerThanY(intPair);
+                StringPrinter.printIsXBiggerYOrNot(s);
+            } catch (NumberFormatException e) {
+                System.out.println("int型　\"x y\" を入力してください。");
+            }
+
+        } else  if ((args[0].equals("3-4"))) {
+
+            try {
+                IntPair intPair = Scanner.scanXY();
+                String s = UtilityOfIntPair.isXBiggerThanY(intPair);
+                StringPrinter.printIsXBiggerYOrNot(s);
+            } catch (NumberFormatException e) {
+                System.out.println("int型　\"x y\" を入力してください。");
+            }
+
+        } else{
             System.err.println("問題番号を指定してください。");
         }
     }
