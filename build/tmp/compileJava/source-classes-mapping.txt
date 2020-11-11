@@ -1,10 +1,10 @@
+UtilityOfIntPair.java
+ UtilityOfIntPair
+IntPair.java
+ IntPair
+Scanner.java
+ Scanner
 Main.java
  Main
 StringPrinter.java
  StringPrinter
-Scanner.java
- Scanner
-IntPair.java
- IntPair
-UtilityOfIntPair.java
- UtilityOfIntPair

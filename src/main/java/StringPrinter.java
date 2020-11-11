@@ -22,7 +22,7 @@ public class StringPrinter {
             System.out.println("xはyより小さい");
         }
         if (s.equals("equal")) {
-            System.out.println("xとyは同じです。");
+            System.out.println("xとyは等しい");
         }
     }
 }
