@@ -22,7 +22,19 @@ public class Main {
                 System.err.println("int型　\"x y\" を入力してください。");
             }
 
+
         } else if ((args[0].equals("3-4"))) {
+
+            try {
+                IntPair intPair = Scanner.scanXY();
+                String s = UtilityOfIntPair.isXBiggerThanY(intPair);
+                StringPrinter.printIsXBiggerYOrNot(s);
+            } catch (NumberFormatException e) {
+                System.err.println("int型　\"x y\" を入力してください。");
+            }
+
+
+        } else if ((args[0].equals("3-5"))) {
 
             try {
                 int x = Scanner.scanPositiveX();
@@ -34,7 +46,7 @@ public class Main {
                 System.err.println("正の数を入力してください。");
             }
 
-        } else if ((args[0].equals("3-5"))) {
+        } else if ((args[0].equals("3-6"))) {
 
             try {
                 int x = Scanner.scanIntX();
@@ -42,6 +54,22 @@ public class Main {
                 StringPrinter.printString(s);
             } catch (NumberFormatException e) {
                 System.err.println("\"int型\"x を入力してください。");
+            }
+
+        } else if ((args[0].equals("3-7"))) {
+
+            try {
+                int x = Scanner.scanScore();
+                String s1 = ScoreTable.groupScore1(x);
+                StringPrinter.printString(s1);
+                String s2 = ScoreTable.groupScore2(x);
+                StringPrinter.printString(s2);
+                String s3 = ScoreTable.groupScore3(x);
+                StringPrinter.printString(s3);
+            } catch (NumberFormatException e) {
+                System.err.println("\"int型\"x を入力してください。");
+            } catch (IllegalArgumentException e) {
+                System.err.println("有効な点数を入力してください。");
             }
 
         } else {

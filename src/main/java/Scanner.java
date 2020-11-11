@@ -40,4 +40,21 @@ public class Scanner {
         }
 
     }
+
+    public static int scanScore() {
+        System.out.println("int型　点数を入力してください。");
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        try {
+            int x = Integer.parseInt(scan.next());
+            if (x >= 0 && x <= 100) {
+                return x;
+            } else {
+                throw new IllegalArgumentException();
+            }
+
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException();
+        }
+
+    }
 }

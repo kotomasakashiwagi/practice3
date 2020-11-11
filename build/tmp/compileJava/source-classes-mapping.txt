@@ -4,9 +4,11 @@ IntPair.java
  IntPair
 StringPrinter.java
  StringPrinter
+UtilityOfInt.java
+ UtilityOfInt
+ScoreTable.java
+ ScoreTable
 Scanner.java
  Scanner
 Main.java
  Main
-UtilityOfInt.java
- UtilityOfInt
