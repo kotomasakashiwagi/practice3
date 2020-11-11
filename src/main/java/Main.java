@@ -22,7 +22,7 @@ public class Main {
                 System.err.println("int型　\"x y\" を入力してください。");
             }
 
-        } else  if ((args[0].equals("3-4"))) {
+        } else if ((args[0].equals("3-4"))) {
 
             try {
                 int x = Scanner.scanPositiveX();
@@ -30,11 +30,21 @@ public class Main {
                 StringPrinter.printEvenOrOdd(b);
             } catch (NumberFormatException e) {
                 System.err.println("\"int型正数\"x を入力してください。");
-            }catch (IllegalArgumentException e){
+            } catch (IllegalArgumentException e) {
                 System.err.println("正の数を入力してください。");
             }
 
-        } else{
+        } else if ((args[0].equals("3-5"))) {
+
+            try {
+                int x = Scanner.scanIntX();
+                String s = UtilityOfInt.groupNumber(x);
+                StringPrinter.printString(s);
+            } catch (NumberFormatException e) {
+                System.err.println("\"int型\"x を入力してください。");
+            }
+
+        } else {
             System.err.println("問題番号を指定してください。");
         }
     }

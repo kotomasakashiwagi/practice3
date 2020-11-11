@@ -2,11 +2,11 @@ UtilityOfIntPair.java
  UtilityOfIntPair
 IntPair.java
  IntPair
-Scanner.java
- Scanner
-UtilityOfInt.java
- UtilityOfInt
 StringPrinter.java
  StringPrinter
+Scanner.java
+ Scanner
 Main.java
  Main
+UtilityOfInt.java
+ UtilityOfInt

@@ -14,6 +14,7 @@ public class StringPrinter {
             System.out.println("xはyより大きい");
         }
     }
+
     public static void printIsXBiggerYOrNot(String s) {
         if (s.equals("true")) {
             System.out.println("xはyより大きい");
@@ -25,11 +26,16 @@ public class StringPrinter {
             System.out.println("xとyは等しい");
         }
     }
-    public  static void printEvenOrOdd(boolean b){
-        if (b){
+
+    public static void printEvenOrOdd(boolean b) {
+        if (b) {
             System.out.println("xは偶数です。");
-        }else {
+        } else {
             System.out.println("xは奇数です。");
         }
+    }
+
+    public static void printString(String s) {
+        System.out.println(s);
     }
 }

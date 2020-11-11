@@ -1,5 +1,4 @@
 
-import java.util.InputMismatchException;
 
 public class Scanner {
     public static IntPair scanXY() {
@@ -22,9 +21,20 @@ public class Scanner {
             int x = Integer.parseInt(scan.next());
             if (x > 0) {
                 return x;
-            }else {
+            } else {
                 throw new IllegalArgumentException();
             }
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException();
+        }
+
+    }
+
+    public static int scanIntX() {
+        System.out.println("int型　xを入力してください。");
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        try {
+            return Integer.parseInt(scan.next());
         } catch (NumberFormatException e) {
             throw new NumberFormatException();
         }
