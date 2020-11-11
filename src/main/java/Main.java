@@ -19,7 +19,7 @@ public class Main {
                 String s = UtilityOfIntPair.isXBiggerThanY(intPair);
                 StringPrinter.printIsXBiggerYOrNot(s);
             } catch (NumberFormatException e) {
-                System.err.println("int型　\"x y\" を入力してください。");
+                System.err.println("整数　\"x y\" を入力してください。");
             }
 
 
@@ -30,7 +30,7 @@ public class Main {
                 String s = UtilityOfIntPair.isXBiggerThanY(intPair);
                 StringPrinter.printIsXBiggerYOrNot(s);
             } catch (NumberFormatException e) {
-                System.err.println("int型　\"x y\" を入力してください。");
+                System.err.println("整数　\"x y\" を入力してください。");
             }
 
 
@@ -41,7 +41,7 @@ public class Main {
                 boolean b = UtilityOfInt.isEven(x);
                 StringPrinter.printEvenOrOdd(b);
             } catch (NumberFormatException e) {
-                System.err.println("\"int型正数\"x を入力してください。");
+                System.err.println("\"整数\"x を入力してください。");
             } catch (IllegalArgumentException e) {
                 System.err.println("正の数を入力してください。");
             }
@@ -53,7 +53,7 @@ public class Main {
                 String s = UtilityOfInt.groupNumber(x);
                 StringPrinter.printString(s);
             } catch (NumberFormatException e) {
-                System.err.println("\"int型\"x を入力してください。");
+                System.err.println("\"整数\"x を入力してください。");
             }
 
         } else if ((args[0].equals("3-7"))) {
@@ -67,7 +67,7 @@ public class Main {
                 String s3 = ScoreTable.groupScore3(x);
                 StringPrinter.printString(s3);
             } catch (NumberFormatException e) {
-                System.err.println("\"int型\"x を入力してください。");
+                System.err.println("\"整数\"x を入力してください。");
             } catch (IllegalArgumentException e) {
                 System.err.println("有効な点数を入力してください。");
             }
@@ -79,9 +79,21 @@ public class Main {
                 String s = ScoreTable.groupScoreFrom2test(intPair);
                 StringPrinter.printString(s);
             } catch (NumberFormatException e) {
-                System.err.println("\"int型\"x を入力してください。");
+                System.err.println("\"整数\"x を入力してください。");
             } catch (IllegalArgumentException e) {
                 System.err.println("有効な点数を入力してください。");
+            }
+
+        } else if ((args[0].equals("3-9"))) {
+            TablePrinter.printOnBusiness();
+            try {
+                IntPair intPair = Scanner.scanScorePair();
+                String s = ScoreTable.groupScoreFrom2test(intPair);
+                StringPrinter.printString(s);
+            } catch (NumberFormatException e) {
+                System.err.println("\"整数\"x を入力してください。");
+            } catch (IllegalArgumentException e) {
+                System.err.println("有効な数字を入力してください。");
             }
 
         } else{

@@ -8,7 +8,9 @@ StringPrinter.java
  StringPrinter
 Scanner.java
  Scanner
-Main.java
- Main
 ScoreTable.java
  ScoreTable
+TablePrinter.java
+ TablePrinter
+Main.java
+ Main
