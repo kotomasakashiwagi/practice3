@@ -25,4 +25,11 @@ public class StringPrinter {
             System.out.println("xとyは等しい");
         }
     }
+    public  static void printEvenOrOdd(boolean b){
+        if (b){
+            System.out.println("xは偶数です。");
+        }else {
+            System.out.println("xは奇数です。");
+        }
+    }
 }

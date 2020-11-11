@@ -19,17 +19,19 @@ public class Main {
                 String s = UtilityOfIntPair.isXBiggerThanY(intPair);
                 StringPrinter.printIsXBiggerYOrNot(s);
             } catch (NumberFormatException e) {
-                System.out.println("int型　\"x y\" を入力してください。");
+                System.err.println("int型　\"x y\" を入力してください。");
             }
 
         } else  if ((args[0].equals("3-4"))) {
 
             try {
-                IntPair intPair = Scanner.scanXY();
-                String s = UtilityOfIntPair.isXBiggerThanY(intPair);
-                StringPrinter.printIsXBiggerYOrNot(s);
+                int x = Scanner.scanPositiveX();
+                boolean b = UtilityOfInt.isEven(x);
+                StringPrinter.printEvenOrOdd(b);
             } catch (NumberFormatException e) {
-                System.out.println("int型　\"x y\" を入力してください。");
+                System.err.println("\"int型正数\"x を入力してください。");
+            }catch (IllegalArgumentException e){
+                System.err.println("正の数を入力してください。");
             }
 
         } else{

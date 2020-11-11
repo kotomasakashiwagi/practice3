@@ -4,7 +4,9 @@ IntPair.java
  IntPair
 Scanner.java
  Scanner
-Main.java
- Main
+UtilityOfInt.java
+ UtilityOfInt
 StringPrinter.java
  StringPrinter
+Main.java
+ Main
