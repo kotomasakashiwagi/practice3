@@ -4,6 +4,7 @@ public class PublicHoliday {
             "祝日はありません", "９月：敬老の日、秋分の日", "１０月：体育の日", "１１月：文化の日、勤労感謝の日",
             "１２月：天皇誕生日"};
 
+    //その月の祝日を出力
     public static String findOutHoliday(int i) {
         return holiday[i - 1];
     }

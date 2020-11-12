@@ -1,4 +1,5 @@
 public class StringPrinter {
+    //大きい方の数または等しいことを出力
     public static void printBiggerInt(String s, IntPair intPair) {
         if (s.equals("true")) {
             System.out.println(intPair.getX());
@@ -9,12 +10,14 @@ public class StringPrinter {
         }
     }
 
+    //xがyより大きい時出力
     public static void printIsXBiggerY(String s) {
         if (s.equals("true")) {
             System.out.println("xはyより大きい");
         }
     }
 
+    //大きい方の数を教えてくれる
     public static void printIsXBiggerYOrNot(String s) {
         if (s.equals("true")) {
             System.out.println("xはyより大きい");
@@ -27,6 +30,7 @@ public class StringPrinter {
         }
     }
 
+    //隅奇を教えてくれる
     public static void printEvenOrOdd(boolean b) {
         if (b) {
             System.out.println("xは偶数です。");
@@ -35,10 +39,12 @@ public class StringPrinter {
         }
     }
 
+    //Stringをそのまま出力
     public static void printString(String s) {
         System.out.println(s);
     }
 
+    //開いてるかどうか
     public static void printIsOnBusiness(boolean b) {
         if (b) {
             System.out.println("開いています。");
@@ -47,6 +53,7 @@ public class StringPrinter {
         }
     }
 
+    //課題３−１０で満たした条件を全て出力
     public static void printResultOf3_10(IntPair intPair) {
         if (TermsOf3_10.term_1Of3_10(intPair)) {
             System.out.println("xはyより小さく、かつ、xとyは共に偶数である。");

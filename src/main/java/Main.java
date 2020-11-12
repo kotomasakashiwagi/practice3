@@ -78,7 +78,7 @@ public class Main {
 
             try {
                 IntPair intPair = Scanner.scanScorePair();
-                String s = ScoreTable.groupScoreFrom2test(intPair);
+                String s = ScoreTable.groupScoreFrom2Tests(intPair);
                 StringPrinter.printString(s);
             } catch (NumberFormatException e) {
                 System.err.println("\"整数\" を入力してください。");
@@ -118,7 +118,7 @@ public class Main {
             }
 
         } else if ((args[0].equals("3-12"))) {
-            SushiTable.printSushiTable();
+            SushiTablePrinter.printSushiTable();
             try {
                 int i = Scanner.scanSushi();
                 String s = FortuneTellingFromSushi.fortuneTellingFromSushi(i);

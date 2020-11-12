@@ -1,4 +1,5 @@
 public class FortuneTellingFromSushi {
+    //寿司占いの出力
     public static String fortuneTellingFromSushi(int i) {
         if (i == 0) {
             return "凶";
@@ -21,7 +22,7 @@ public class FortuneTellingFromSushi {
         } else if (i == 9) {
             return "吉";
         } else {
-            return "ハズレ";
+            return "有効な数字を入れてください。";
         }
     }
 }

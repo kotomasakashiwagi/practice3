@@ -1,6 +1,7 @@
 
 
 public class Scanner {
+    //整数2つをスキャン
     public static IntPair scanIntPair() {
         System.out.println("整数　x,yを入力してください。例：2 3");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -9,11 +10,12 @@ public class Scanner {
             int y = Integer.parseInt(scan.next());
             return new IntPair(x, y);
         } catch (NumberFormatException e) {
-            throw new NumberFormatException();
+            throw e;
         }
-        //return null;
+
     }
 
+    //正の整数をスキャン
     public static int scanPositiveX() {
         System.out.println("正の数xを入力してください。例：2");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -30,6 +32,7 @@ public class Scanner {
 
     }
 
+    //整数1つをスキャン
     public static int scanIntX() {
         System.out.println("整数xを入力してください。例：2");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -41,6 +44,7 @@ public class Scanner {
 
     }
 
+    //テストの点数をスキャン
     public static int scanScore() {
         System.out.println("点数を入力してください。例：20");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -58,6 +62,7 @@ public class Scanner {
 
     }
 
+    //テストの点数を二つスキャン
     public static IntPair scanScorePair() {
         System.out.println("点数xとyを入力してください。例：2 3");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -74,6 +79,7 @@ public class Scanner {
         }
     }
 
+    //曜日と時間を数字に変換したintPair
     public static IntPair scanIntPairOfReservation() {
         System.out.println("上記にしたがって曜日と時間を数字で入れてください。例：2 1");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -90,6 +96,7 @@ public class Scanner {
         }
     }
 
+    //月をスキャン
     public static int scanMonth() {
         System.out.println("月を入力してください。2月 → 2");
         java.util.Scanner scan = new java.util.Scanner(System.in);
@@ -107,6 +114,7 @@ public class Scanner {
 
     }
 
+    //リストから寿司を数字でスキャン
     public static int scanSushi() {
         System.out.println("上記に従って番号を入力してください。まぐろ → 2");
         java.util.Scanner scan = new java.util.Scanner(System.in);

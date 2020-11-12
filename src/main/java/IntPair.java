@@ -25,7 +25,7 @@ public class IntPair {
             return (this.x == testIntPair.x) && (this.y == testIntPair.y);
         }
         return false;
-        //return (this.x == intPair.x)&&(this.y == intPair.y);
+
     }
 
     public IntPair switchXY() {

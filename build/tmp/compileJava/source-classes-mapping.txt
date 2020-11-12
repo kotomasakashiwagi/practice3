@@ -1,30 +1,30 @@
 TablePrinter.java
  TablePrinter
-UtilityOfIntPair.java
- UtilityOfIntPair
-TermsOf3_10.java
- TermsOf3_10
-UtilityOfInt.java
- UtilityOfInt
-IntPair.java
- IntPair
-BusinessDayTable.java
- BusinessDayTable
-ScoreTable.java
- ScoreTable
-SushiTable.java
- SushiTable
-PublicHoliday.java
- PublicHoliday
-FortuneTellingFromSushi.java
- FortuneTellingFromSushi
-Scanner.java
- Scanner
+SushiTablePrinter.java
+ SushiTablePrinter
 IntPrinter.java
  IntPrinter
-StringPrinter.java
- StringPrinter
+UtilityOfInt.java
+ UtilityOfInt
+UtilityOfIntPair.java
+ UtilityOfIntPair
+IntPair.java
+ IntPair
 Main.java
  Main
 DaysSearcher.java
  DaysSearcher
+PublicHoliday.java
+ PublicHoliday
+BusinessDayTable.java
+ BusinessDayTable
+ScoreTable.java
+ ScoreTable
+FortuneTellingFromSushi.java
+ FortuneTellingFromSushi
+Scanner.java
+ Scanner
+TermsOf3_10.java
+ TermsOf3_10
+StringPrinter.java
+ StringPrinter
