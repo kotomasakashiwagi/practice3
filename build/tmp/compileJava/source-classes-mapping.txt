@@ -10,6 +10,14 @@ UtilityOfIntPair.java
  UtilityOfIntPair
 IntPair.java
  IntPair
+StringPrinter.java
+ StringPrinter
+TermsOf3_10.java
+ TermsOf3_10
+ScoreTable.java
+ ScoreTable
+FortuneTellingFromSushi.java
+ FortuneTellingFromSushi
 Main.java
  Main
 DaysSearcher.java
@@ -18,13 +26,5 @@ PublicHoliday.java
  PublicHoliday
 BusinessDayTable.java
  BusinessDayTable
-ScoreTable.java
- ScoreTable
-FortuneTellingFromSushi.java
- FortuneTellingFromSushi
 Scanner.java
  Scanner
-TermsOf3_10.java
- TermsOf3_10
-StringPrinter.java
- StringPrinter

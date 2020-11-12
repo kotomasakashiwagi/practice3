@@ -1,5 +1,5 @@
 public class DaysSearcher {
-    final static int[] days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    private final static int[] days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     //その月が何日あるか
     public static int searchDaysFromMonth(int i) {

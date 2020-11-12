@@ -1,5 +1,5 @@
 public class SushiTablePrinter {
-    final static String[] sushiTable = {
+    private final static String[] sushiTable = {
             "いくら", "タコ", "まぐろ", "いか", "あじ", "さば", "こはだ", "うに", "サーモン", "えび"
     };
 
