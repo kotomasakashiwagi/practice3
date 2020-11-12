@@ -102,7 +102,24 @@ public class Scanner {
             }
 
         } catch (NumberFormatException e) {
-            throw new NumberFormatException();
+            throw e;
+        }
+
+    }
+
+    public static int scanSushi() {
+        System.out.println("上記に従って番号を入力してください。まぐろ → 2");
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        try {
+            int x = Integer.parseInt(scan.next());
+            if (x >= 0 && x <= 9) {
+                return x;
+            } else {
+                throw new IllegalArgumentException("正しい数字を入れてください");
+            }
+
+        } catch (NumberFormatException e) {
+            throw e;
         }
 
     }

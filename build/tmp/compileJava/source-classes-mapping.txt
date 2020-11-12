@@ -12,11 +12,19 @@ BusinessDayTable.java
  BusinessDayTable
 ScoreTable.java
  ScoreTable
-StringPrinter.java
- StringPrinter
-Scanner.java
- Scanner
-Main.java
- Main
+SushiTable.java
+ SushiTable
 PublicHoliday.java
  PublicHoliday
+FortuneTellingFromSushi.java
+ FortuneTellingFromSushi
+Scanner.java
+ Scanner
+IntPrinter.java
+ IntPrinter
+StringPrinter.java
+ StringPrinter
+Main.java
+ Main
+DaysSearcher.java
+ DaysSearcher

@@ -117,6 +117,29 @@ public class Main {
                 System.err.println(e.getMessage());
             }
 
+        } else if ((args[0].equals("3-12"))) {
+            SushiTable.printSushiTable();
+            try {
+                int i = Scanner.scanSushi();
+                String s = FortuneTellingFromSushi.fortuneTellingFromSushi(i);
+                StringPrinter.printString(s);
+            } catch (NumberFormatException e) {
+                System.err.println("\"整数\" を入力してください。");
+            } catch (IllegalArgumentException e) {
+                System.err.println(e.getMessage());
+            }
+
+        } else if ((args[0].equals("3-13"))) {
+            try {
+                int i = Scanner.scanMonth();
+                int days = DaysSearcher.searchDaysFromMonth(i);
+                IntPrinter.printInt(days);
+            } catch (NumberFormatException e) {
+                System.err.println("\"整数\" を入力してください。");
+            } catch (IllegalArgumentException e) {
+                System.err.println(e.getMessage());
+            }
+
         } else {
             System.err.println("問題番号を指定してください。");
         }

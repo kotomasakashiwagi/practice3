@@ -63,5 +63,6 @@ public class StringPrinter {
         if (TermsOf3_10.term_5Of3_10(intPair)) {
             System.out.println("xもyも負の数である、ではない。");
         }
+
     }
 }
