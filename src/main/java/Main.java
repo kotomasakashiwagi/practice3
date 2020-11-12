@@ -1,3 +1,5 @@
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -69,7 +71,7 @@ public class Main {
             } catch (NumberFormatException e) {
                 System.err.println("\"整数\"x を入力してください。");
             } catch (IllegalArgumentException e) {
-                System.err.println("有効な点数を入力してください。");
+                System.err.println(e.getMessage());
             }
 
         } else if ((args[0].equals("3-8"))) {
@@ -81,7 +83,7 @@ public class Main {
             } catch (NumberFormatException e) {
                 System.err.println("\"整数\" を入力してください。");
             } catch (IllegalArgumentException e) {
-                System.err.println("有効な点数を入力してください。");
+                System.err.println(e.getMessage());
             }
 
         } else if ((args[0].equals("3-9"))) {
@@ -102,6 +104,17 @@ public class Main {
                 StringPrinter.printResultOf3_10(intPair);
             } catch (NumberFormatException e) {
                 System.err.println("\"整数\" を入力してください。");
+            }
+
+        } else if ((args[0].equals("3-11"))) {
+            try {
+                int i = Scanner.scanMonth();
+                String s = PublicHoliday.findOutHoliday(i);
+                StringPrinter.printString(s);
+            } catch (NumberFormatException e) {
+                System.err.println("\"整数\" を入力してください。");
+            } catch (IllegalArgumentException e) {
+                System.err.println(e.getMessage());
             }
 
         } else {

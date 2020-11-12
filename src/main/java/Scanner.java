@@ -15,7 +15,7 @@ public class Scanner {
     }
 
     public static int scanPositiveX() {
-        System.out.println("正の数xを入力してください。例：2 3");
+        System.out.println("正の数xを入力してください。例：2");
         java.util.Scanner scan = new java.util.Scanner(System.in);
         try {
             int x = Integer.parseInt(scan.next());
@@ -31,7 +31,7 @@ public class Scanner {
     }
 
     public static int scanIntX() {
-        System.out.println("整数xを入力してください。例：2 3");
+        System.out.println("整数xを入力してください。例：2");
         java.util.Scanner scan = new java.util.Scanner(System.in);
         try {
             return Integer.parseInt(scan.next());
@@ -42,18 +42,18 @@ public class Scanner {
     }
 
     public static int scanScore() {
-        System.out.println("点数を入力してください。例：2 3");
+        System.out.println("点数を入力してください。例：20");
         java.util.Scanner scan = new java.util.Scanner(System.in);
         try {
             int x = Integer.parseInt(scan.next());
             if (x >= 0 && x <= 100) {
                 return x;
             } else {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("正しい数字を入れてください。");
             }
 
         } catch (NumberFormatException e) {
-            throw new NumberFormatException();
+            throw e;
         }
 
     }
@@ -67,10 +67,10 @@ public class Scanner {
             if (x >= 0 && x <= 100 && y >= 0 && y <= 100) {
                 return new IntPair(x, y);
             } else {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("正しい数字を入れてください。");
             }
         } catch (NumberFormatException e) {
-            throw new NumberFormatException();
+            throw e;
         }
     }
 
@@ -88,5 +88,22 @@ public class Scanner {
         } catch (NumberFormatException e) {
             throw e;
         }
+    }
+
+    public static int scanMonth() {
+        System.out.println("月を入力してください。2月 → 2");
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        try {
+            int x = Integer.parseInt(scan.next());
+            if (x >= 1 && x <= 12) {
+                return x;
+            } else {
+                throw new IllegalArgumentException("正しい数字を入れてください");
+            }
+
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException();
+        }
+
     }
 }

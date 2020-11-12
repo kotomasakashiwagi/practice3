@@ -1,7 +1,3 @@
-IntPair.java
- IntPair
-ScoreTable.java
- ScoreTable
 TablePrinter.java
  TablePrinter
 UtilityOfIntPair.java
@@ -10,11 +6,17 @@ TermsOf3_10.java
  TermsOf3_10
 UtilityOfInt.java
  UtilityOfInt
+IntPair.java
+ IntPair
 BusinessDayTable.java
  BusinessDayTable
+ScoreTable.java
+ ScoreTable
+StringPrinter.java
+ StringPrinter
 Scanner.java
  Scanner
 Main.java
  Main
-StringPrinter.java
- StringPrinter
+PublicHoliday.java
+ PublicHoliday
