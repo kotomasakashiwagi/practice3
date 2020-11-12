@@ -1,18 +1,20 @@
-UtilityOfIntPair.java
- UtilityOfIntPair
-UtilityOfInt.java
- UtilityOfInt
 IntPair.java
  IntPair
-TablePrinter.java
- TablePrinter
 ScoreTable.java
  ScoreTable
-StringPrinter.java
- StringPrinter
+TablePrinter.java
+ TablePrinter
+UtilityOfIntPair.java
+ UtilityOfIntPair
+TermsOf3_10.java
+ TermsOf3_10
+UtilityOfInt.java
+ UtilityOfInt
+BusinessDayTable.java
+ BusinessDayTable
 Scanner.java
  Scanner
 Main.java
  Main
-BusinessDayTable.java
- BusinessDayTable
+StringPrinter.java
+ StringPrinter

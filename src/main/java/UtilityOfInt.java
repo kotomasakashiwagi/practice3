@@ -1,6 +1,6 @@
 public class UtilityOfInt {
     public static boolean isEven(int x) {
-       return x%2 == 0;
+        return x % 2 == 0;
     }
 
 
@@ -16,5 +16,13 @@ public class UtilityOfInt {
         } else {
             return "負の奇数";
         }
+    }
+
+    public static boolean isPositive(int i) {
+        return i > 0;
+    }
+
+    public static boolean isOnRange(int i, int min, int max) {
+        return i >= min && i <= max;
     }
 }

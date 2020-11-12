@@ -9,4 +9,9 @@ public class UtilityOfIntPair {
         }
     }
 
+    public static boolean isEqualPair(IntPair intPair) {
+        return intPair.getX() >= intPair.getY() && intPair.getX() <= intPair.getY();
+    }
+
+
 }

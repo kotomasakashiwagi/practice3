@@ -1,7 +1,7 @@
 
 
 public class Scanner {
-    public static IntPair scanXY() {
+    public static IntPair scanIntPair() {
         System.out.println("整数　x,yを入力してください。例：2 3");
         java.util.Scanner scan = new java.util.Scanner(System.in);
         try {
@@ -73,7 +73,8 @@ public class Scanner {
             throw new NumberFormatException();
         }
     }
-    public static IntPair scanIntPairOfReservation(){
+
+    public static IntPair scanIntPairOfReservation() {
         System.out.println("上記にしたがって曜日と時間を数字で入れてください。例：2 1");
         java.util.Scanner scan = new java.util.Scanner(System.in);
         try {
