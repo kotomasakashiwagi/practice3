@@ -74,7 +74,7 @@ public class Scanner {
         }
     }
     public static IntPair scanIntPairOfReservation(){
-        System.out.println("上記にしたがって曜日と時間を数字で入れてください。例：2 3");
+        System.out.println("上記にしたがって曜日と時間を数字で入れてください。例：2 1");
         java.util.Scanner scan = new java.util.Scanner(System.in);
         try {
             int x = Integer.parseInt(scan.next());
@@ -82,7 +82,7 @@ public class Scanner {
             if (x >= 0 && x <= 6 && y >= 0 && y <= 2) {
                 return new IntPair(x, y);
             } else {
-                throw new IllegalArgumentException("正しい数字を入れてください。例：2 3");
+                throw new IllegalArgumentException("正しい数字を入れてください。例：2 1");
             }
         } catch (NumberFormatException e) {
             throw e;

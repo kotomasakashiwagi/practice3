@@ -38,4 +38,9 @@ public class StringPrinter {
     public static void printString(String s) {
         System.out.println(s);
     }
+    public static void printIsOnBusiness(boolean b){
+        if(b){
+            System.out.println("開いています。");
+        }else {System.out.println("休診");}
+    }
 }

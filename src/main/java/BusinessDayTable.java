@@ -1,7 +1,12 @@
 public class BusinessDayTable {
+    static final boolean [][]businessTable = {{false,true,false,true,true,false,true},
+            {false,true,true,true,true,true,false},{false,true,true,false,true,true,false}};
     public static boolean isOnBusiness(IntPair intPair){
-        if()
+        int timeZone = intPair.getY();
+        int weekDays = intPair.getX();
+        return businessTable[timeZone][weekDays];
+
     }
 }
 
-//11/11ここまで。営業表のクラスを作るかどうか。
+

@@ -79,7 +79,7 @@ public class Main {
                 String s = ScoreTable.groupScoreFrom2test(intPair);
                 StringPrinter.printString(s);
             } catch (NumberFormatException e) {
-                System.err.println("\"整数\"x を入力してください。");
+                System.err.println("\"整数\" を入力してください。");
             } catch (IllegalArgumentException e) {
                 System.err.println("有効な点数を入力してください。");
             }
@@ -87,13 +87,13 @@ public class Main {
         } else if ((args[0].equals("3-9"))) {
             TablePrinter.printOnBusiness();
             try {
-                IntPair intPair = Scanner.scanScorePair();
-                String s = ScoreTable.groupScoreFrom2test(intPair);
-                StringPrinter.printString(s);
+                IntPair intPair = Scanner.scanIntPairOfReservation();
+                boolean b = BusinessDayTable.isOnBusiness(intPair);
+                StringPrinter.printIsOnBusiness(b);
             } catch (NumberFormatException e) {
-                System.err.println("\"整数\"x を入力してください。");
+                System.err.println("\"整数\" を入力してください。");
             } catch (IllegalArgumentException e) {
-                System.err.println("有効な数字を入力してください。");
+                System.err.println(e.getMessage());
             }
 
         } else{
