@@ -1,20 +1,36 @@
 TablePrinter.java
  TablePrinter
+IntScanner.java
+ IntScanner
+BusinessDayTable.java
+ BusinessDayTable
+SushiTablePrinter.java
+ SushiTablePrinter
+PublicHoliday.java
+ PublicHoliday
+StringPrinter.java
+ StringPrinter
+FortuneTellingFromSushi.java
+ FortuneTellingFromSushi
+IntPair.java
+ IntPair
+IntPrinter.java
+ IntPrinter
+DaysSearcher.java
+ DaysSearcher
+EnumOfCompareXY.java
+ EnumOfCompareXY
+ EnumOfCompareXY$CompareXY
+Main.java
+ Main
 TermsOf3_10.java
  TermsOf3_10
+UtilityOfIntPair.java
+ UtilityOfIntPair
 UtilityOfInt.java
  UtilityOfInt
 ScoreTable.java
  ScoreTable
-UtilityOfIntPair.java
- UtilityOfIntPair
-EnumOfCompareXY.java
- EnumOfCompareXY
- EnumOfCompareXY$CompareXY
-FortuneTellingFromSushi.java
- FortuneTellingFromSushi
-Main.java
- Main
 Question.java
  OutOfQuestion
  Question
@@ -31,22 +47,6 @@ Question.java
  Question7
  Question8
  Question9
-DaysSearcher.java
- DaysSearcher
-PublicHoliday.java
- PublicHoliday
-BusinessDayTable.java
- BusinessDayTable
-SushiTablePrinter.java
- SushiTablePrinter
-StringPrinter.java
- StringPrinter
-IntPrinter.java
- IntPrinter
-IntScanner.java
- IntScanner
-IntPair.java
- IntPair
 QuestionSelector.java
  QuestionSelector
  QuestionSelector$1

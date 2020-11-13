@@ -1,3 +1,5 @@
+import java.util.InputMismatchException;
+
 public interface Question {
     void run();
 }
@@ -6,9 +8,13 @@ class Question1 implements Question {
 
     @Override
     public void run() {
-        IntPair intPair = IntScanner.scanIntPair();
-        EnumOfCompareXY.CompareXY enumXY = UtilityOfIntPair.judgeXBiggerThanY(intPair);
-        StringPrinter.printIsXBiggerY(enumXY);
+        try {
+            IntPair intPair = IntScanner.scanIntPair();
+            EnumOfCompareXY.CompareXY enumXY = UtilityOfIntPair.judgeXBiggerThanY(intPair);
+            StringPrinter.printIsXBiggerY(enumXY);
+        } catch (InputMismatchException e) {
+            System.err.println("有効な数字を入力してください。");
+        }
     }
 }
 
@@ -16,9 +22,13 @@ class Question2 implements Question {
 
     @Override
     public void run() {
+        try {
         IntPair intPair = IntScanner.scanIntPair();
         EnumOfCompareXY.CompareXY enumXY = UtilityOfIntPair.judgeXBiggerThanY(intPair);
         StringPrinter.printBiggerInt(enumXY, intPair);
+        } catch (InputMismatchException e) {
+            System.err.println("有効な数字を入力してください。");
+        }
     }
 }
 
@@ -30,7 +40,7 @@ class Question3 implements Question {
             IntPair intPair = IntScanner.scanIntPair();
             EnumOfCompareXY.CompareXY enumXY = UtilityOfIntPair.judgeXBiggerThanY(intPair);
             StringPrinter.printIsXBiggerYOrNot(enumXY);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("整数　\"x y\" を入力してください。");
         }
     }
@@ -44,7 +54,7 @@ class Question4 implements Question {
             IntPair intPair = IntScanner.scanIntPair();
             EnumOfCompareXY.CompareXY enumXY = UtilityOfIntPair.judgeXBiggerThanY(intPair);
             StringPrinter.printIsXBiggerYOrNot(enumXY);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("整数　\"x y\" を入力してください。");
         }
     }
@@ -58,7 +68,7 @@ class Question5 implements Question {
             int x = IntScanner.scanPositiveX();
             boolean b = UtilityOfInt.isEven(x);
             StringPrinter.printEvenOrOdd(b);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\"x を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println("正の数を入力してください。");
@@ -74,7 +84,7 @@ class Question6 implements Question {
             int x = IntScanner.scanIntX();
             String s = UtilityOfInt.groupNumber(x);
             StringPrinter.printString(s);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\"x を入力してください。");
         }
     }
@@ -92,7 +102,7 @@ class Question7 implements Question {
             StringPrinter.printString(s2);
             String s3 = ScoreTable.groupScore3(x);
             StringPrinter.printString(s3);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\"x を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
@@ -108,7 +118,7 @@ class Question8 implements Question {
             IntPair intPair = IntScanner.scanScorePair();
             String s = ScoreTable.groupScoreFrom2Tests(intPair);
             StringPrinter.printString(s);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\" を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
@@ -125,7 +135,7 @@ class Question9 implements Question {
             IntPair intPair = IntScanner.scanIntPairOfReservation();
             boolean b = BusinessDayTable.isOnBusiness(intPair);
             StringPrinter.printIsOnBusiness(b);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\" を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
@@ -140,7 +150,7 @@ class Question10 implements Question {
         try {
             IntPair intPair = IntScanner.scanIntPair();//
             StringPrinter.printResultOf3_10(intPair);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\" を入力してください。");
         }
     }
@@ -154,7 +164,7 @@ class Question11 implements Question {
             int i = IntScanner.scanMonth();
             String s = PublicHoliday.findOutHoliday(i);
             StringPrinter.printString(s);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\" を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
@@ -171,7 +181,7 @@ class Question12 implements Question {
             int i = IntScanner.scanSushi();
             String s = FortuneTellingFromSushi.fortuneTellingFromSushi(i);
             StringPrinter.printString(s);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\" を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
@@ -188,7 +198,7 @@ class Question13 implements Question {
             int i = IntScanner.scanMonth();
             int i1 = DaysSearcher.searchDaysFromMonth(i);
             IntPrinter.printInt(i1);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.err.println("\"整数\" を入力してください。");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
