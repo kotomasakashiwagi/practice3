@@ -1,7 +1,7 @@
 public class TermsOf3_10 {
     //condition x<y　and　xが偶数　and　yが偶数
     public static boolean term_1Of3_10(IntPair intPair) {
-        return UtilityOfIntPair.isXBiggerThanY(intPair).equals("false") &&
+        return UtilityOfIntPair.judgeXBiggerThanY(intPair) == EnumOfCompareXY.CompareXY.YBiggerX &&
                 UtilityOfInt.isEven(intPair.getX()) &&
                 UtilityOfInt.isEven(intPair.getY());
     }
@@ -9,13 +9,13 @@ public class TermsOf3_10 {
     //condition x=y and x>0 and y>0
     public static boolean term_2Of3_10(IntPair intPair) {
         return UtilityOfIntPair.isEqualPair(intPair) &&
-                UtilityOfInt.isPositive(intPair.getX()) &&
-                UtilityOfInt.isPositive(intPair.getY());
+                !(UtilityOfInt.isPositive(intPair.getX())) &&
+                !(UtilityOfInt.isPositive(intPair.getY()));
     }
 
     //condition x<y or xは偶数
     public static boolean term_3Of3_10(IntPair intPair) {
-        return UtilityOfIntPair.isXBiggerThanY(intPair).equals("false")
+        return UtilityOfIntPair.judgeXBiggerThanY(intPair) == EnumOfCompareXY.CompareXY.YBiggerX
                 || UtilityOfInt.isEven(intPair.getX());
     }
 

@@ -1,9 +1,9 @@
 public class StringPrinter {
     //大きい方の数または等しいことを出力
-    public static void printBiggerInt(String s, IntPair intPair) {
-        if (s.equals("true")) {
+    public static void printBiggerInt(EnumOfCompareXY.CompareXY en, IntPair intPair) {
+        if (en == EnumOfCompareXY.CompareXY.XBiggerY) {
             System.out.println(intPair.getX());
-        } else if (s.equals("false")) {
+        } else if (en == EnumOfCompareXY.CompareXY.YBiggerX) {
             System.out.println(intPair.getY());
         } else {
             System.out.println("xとyは同じです");
@@ -11,21 +11,21 @@ public class StringPrinter {
     }
 
     //xがyより大きい時出力
-    public static void printIsXBiggerY(String s) {
-        if (s.equals("true")) {
+    public static void printIsXBiggerY(EnumOfCompareXY.CompareXY en) {
+        if (en == EnumOfCompareXY.CompareXY.XBiggerY) {
             System.out.println("xはyより大きい");
         }
     }
 
     //大きい方の数を教えてくれる
-    public static void printIsXBiggerYOrNot(String s) {
-        if (s.equals("true")) {
+    public static void printIsXBiggerYOrNot(EnumOfCompareXY.CompareXY en) {
+        if (en == EnumOfCompareXY.CompareXY.XBiggerY) {
             System.out.println("xはyより大きい");
         }
-        if (s.equals("false")) {
+        if (en == EnumOfCompareXY.CompareXY.YBiggerX) {
             System.out.println("xはyより小さい");
         }
-        if (s.equals("equal")) {
+        if (en == EnumOfCompareXY.CompareXY.XEqualY) {
             System.out.println("xとyは等しい");
         }
     }

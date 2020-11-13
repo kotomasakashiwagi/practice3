@@ -1,11 +1,11 @@
 public class UtilityOfIntPair {
-    public static String isXBiggerThanY(IntPair intPair) {
+    public static EnumOfCompareXY.CompareXY judgeXBiggerThanY(IntPair intPair) {
         if (intPair.getY() > intPair.getX()) {
-            return "false";
+            return EnumOfCompareXY.CompareXY.YBiggerX;
         } else if (intPair.getY() < intPair.getX()) {
-            return "true";
+            return EnumOfCompareXY.CompareXY.XBiggerY;
         } else {
-            return "equal";
+            return EnumOfCompareXY.CompareXY.XEqualY;
         }
     }
 

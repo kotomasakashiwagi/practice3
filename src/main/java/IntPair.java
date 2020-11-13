@@ -15,20 +15,7 @@ public class IntPair {
         return this.y;
     }
 
-    @Override
-    public boolean equals(Object intPair) {
-        if (intPair == this) {
-            return true;
-        }
-        if (intPair instanceof IntPair) {
-            IntPair testIntPair = (IntPair) intPair;
-            return (this.x == testIntPair.x) && (this.y == testIntPair.y);
-        }
-        return false;
-
-    }
-
-    public IntPair switchXY() {
-        return new IntPair(getY(), getX());
+    public static int sumXY(IntPair intPair) {
+        return intPair.getX() + intPair.getY();
     }
 }

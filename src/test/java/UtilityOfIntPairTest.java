@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class UtilityOfIntPairTest {
     @Test
     public void isXBiggerThanYTest() {
-        assertEquals("true", UtilityOfIntPair.isXBiggerThanY(new IntPair(20, -19)));
-        assertEquals("false", UtilityOfIntPair.isXBiggerThanY(new IntPair(2, 19)));
-        assertEquals("equal", UtilityOfIntPair.isXBiggerThanY(new IntPair(0, 0)));
+        assertEquals(EnumOfCompareXY.CompareXY.XBiggerY, UtilityOfIntPair.judgeXBiggerThanY(new IntPair(20, -19)));
+        assertEquals(EnumOfCompareXY.CompareXY.YBiggerX, UtilityOfIntPair.judgeXBiggerThanY(new IntPair(2, 19)));
+        assertEquals(EnumOfCompareXY.CompareXY.XEqualY, UtilityOfIntPair.judgeXBiggerThanY(new IntPair(0, 0)));
     }
 
     @Test

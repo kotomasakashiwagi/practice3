@@ -3,18 +3,22 @@ public class UtilityOfInt {
         return x % 2 == 0;
     }
 
+    private static final String SEINOGUSU = "正の偶数";
+    private static final String SEINOKISU = "正の奇数";
+    private static final String HUNOGUSU = "負の偶数";
+    private static final String HUNOKISU = "負の奇数";
 
     public static String groupNumber(int x) {
         if (x >= 0) {
             if (isEven(x)) {
-                return "正の偶数";
+                return SEINOGUSU;
             } else {
-                return "正の奇数";
+                return SEINOKISU;
             }
         } else if (isEven(x)) {
-            return "負の偶数";
+            return HUNOGUSU;
         } else {
-            return "負の奇数";
+            return HUNOKISU;
         }
     }
 
