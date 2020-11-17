@@ -9,4 +9,5 @@ public class BusinessDayTableTest {
         assertFalse(BusinessDayTable.isOnBusiness(new IntPair(0, 2)));
     }
 
+
 }

@@ -1,7 +1,7 @@
 TablePrinter.java
  TablePrinter
-IntScanner.java
- IntScanner
+ScoreTable.java
+ ScoreTable
 BusinessDayTable.java
  BusinessDayTable
 SushiTablePrinter.java
@@ -29,24 +29,38 @@ UtilityOfIntPair.java
  UtilityOfIntPair
 UtilityOfInt.java
  UtilityOfInt
-ScoreTable.java
- ScoreTable
+IntScanner.java
+ IntScanner
 Question.java
- OutOfQuestion
  Question
- Question1
- Question10
- Question11
- Question12
- Question13
- Question2
- Question3
+OutOfQuestion.java
+ OutOfQuestion
+Question4.java
  Question4
- Question5
- Question6
+Question10.java
+ Question10
+Question7.java
  Question7
+Question1.java
+ Question1
+Question3.java
+ Question3
+Question6.java
+ Question6
+Question8.java
  Question8
+Question2.java
+ Question2
+Question5.java
+ Question5
+Question9.java
  Question9
+Question11.java
+ Question11
+Question12.java
+ Question12
+Question13.java
+ Question13
 QuestionSelector.java
  QuestionSelector
  QuestionSelector$1

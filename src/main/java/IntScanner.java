@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class IntScanner {
     public static IntPair scanIntPair() {
-        System.out.println("整数　x,yを入力してください。例：20 30");
+        System.out.println("整数　x,yを入力してください。例：3 2");
         Scanner scan = new Scanner(System.in);
         int x = scan.nextInt();
         int y = scan.nextInt();
@@ -32,7 +32,7 @@ public class IntScanner {
     //テストの点数をスキャン
     public static int scanScore() {
         int x = scanIntX();
-        if (x >= 0 && x <= 100) {
+        if (x < 0 && x > 100) {
             throw new IllegalArgumentException("正しい数字を入れてください。");
         }
         return x;
@@ -41,7 +41,7 @@ public class IntScanner {
     //テストの点数を二つスキャン
     public static IntPair scanScorePair() {
         IntPair intPair = scanIntPair();
-        if (intPair.getX() >= 0 && intPair.getX() <= 100 && intPair.getY() >= 0 && intPair.getY() <= 100) {
+        if (intPair.getX() < 0 && intPair.getX() > 100 && intPair.getY() < 0 && intPair.getY() > 100) {
             throw new IllegalArgumentException("正しい数字を入れてください。");
         }
         return new IntPair(intPair.getX(), intPair.getY());
@@ -51,7 +51,7 @@ public class IntScanner {
     public static IntPair scanIntPairOfReservation() {
         System.out.println("上記にしたがって曜日と時間を数字で入れてください。例：2 1");
         IntPair intPair = scanIntPair();
-        if (intPair.getX() >= 0 && intPair.getX() <= 6 && intPair.getY() >= 0 && intPair.getY() <= 2) {
+        if (intPair.getX() < 0 && intPair.getX() > 6 && intPair.getY() < 0 && intPair.getY() > 2) {
             throw new IllegalArgumentException("正しい数字を入れてください。例：2 1");
         }
         return new IntPair(intPair.getX(), intPair.getY());
@@ -59,9 +59,9 @@ public class IntScanner {
 
     //月をスキャン
     public static int scanMonth() {
-        System.out.println("月を入力してください。2月 → 2");
+        System.out.println("2月 → 2　に習って");
         int x = scanIntX();
-        if (x >= 1 && x <= 12) {
+        if (x < 1 || x > 12) {
             throw new IllegalArgumentException("正しい数字を入れてください");
         }
         return x;
@@ -71,12 +71,11 @@ public class IntScanner {
 
     //リストから寿司を数字でスキャン
     public static int scanSushi() {
-        System.out.println("上記に従って番号を入力してください。まぐろ → 2");
+        System.out.println("例：まぐろ → 2");
         int x = scanIntX();
-        if (x >= 0 && x <= 9) {
+        if (x < 0 || x > 9) {
             throw new IllegalArgumentException("正しい数字を入れてください");
         }
         return x;
-
     }
 }

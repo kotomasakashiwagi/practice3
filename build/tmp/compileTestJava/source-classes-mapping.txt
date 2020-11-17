@@ -1,14 +1,14 @@
 FortuneTellingFromSushiTest.java
  FortuneTellingFromSushiTest
-BusinessDayTableTest.java
- BusinessDayTableTest
+TermsOf3_10Test.java
+ TermsOf3_10Test
 PublicHolidayTest.java
  PublicHolidayTest
 ScoreTableTest.java
  ScoreTableTest
-UtilityOfIntTest.java
- UtilityOfIntTest
-TermsOf3_10Test.java
- TermsOf3_10Test
 UtilityOfIntPairTest.java
  UtilityOfIntPairTest
+UtilityOfIntTest.java
+ UtilityOfIntTest
+BusinessDayTableTest.java
+ BusinessDayTableTest
