@@ -48,7 +48,7 @@ public class ScoreTable {
             return GOUKAKU;
         } else if (intPair.getY() + intPair.getX() >= 130) {
             return GOUKAKU;
-        } else if (intPair.getX() + intPair.getY() >= 100 && intPair.getY() >= 90 || intPair.getX() >= 90) {
+        } else if (intPair.getX() + intPair.getY() >= 100 && (intPair.getY() >= 90 || intPair.getX() >= 90)) {
             return GOUKAKU;
         } else {
             return HUGOUKAKU;
